@@ -5,44 +5,51 @@ from conversor_temperatura.kelvin import kelvin_to_celsius, kelvin_to_fahrenheit
 
 temperatura = 0
 
-print("""
-      
-      Seleccione el conversor que desea utilizar
-      
-      1. Conversor Longitud
-      2. Conversor Temperatura
-      
-      \n""")
-
-op = int(input("Inserte la opción que desea: "))
-
-if op == 2:
-      print("Seleccionó el Conversor Temperatura \n")
-      
+while True:
       print("""
             
-            1.Celcius
-            2.Farenheit
-            3.Kelvin
+            Seleccione el conversor que desea utilizar
             
+            1. Conversor Longitud
+            2. Conversor Temperatura
             
             \n""")
-      
-      op = int(input("Qué tipo de temperatura está intentando convertir? : "))
-      
+
+      op = int(input("Inserte la opción que desea: "))
+
       if op == 1:
-            op = int(input("""
+            pass
+            
+      if op == 2:
+            print("Seleccionó el Conversor Temperatura \n")
+            
+            print("""
                   
-                  Deseas convertir de:
+                  1.Celcius
+                  2.Farenheit
+                  3.Kelvin
                   
-                  1.Celcius a Fahrenheit
-                  2.Celcius Kelvin
                   
-                  \n"""))
+                  \n""")
+            
+            op = int(input("Qué tipo de temperatura está intentando convertir? : "))
             
             if op == 1:
-                  temperatura = float(input("Inserte la Temperatura: "))
-                  print(f"El resultado de convertir {temperatura} Celcius a Fahrenheit es igual a {celcius_to_farenheit(temperatura)}")
-      
-      
+                  op = int(input("""
+                        
+                        Deseas convertir de:
+                        
+                        1.Celcius a Fahrenheit
+                        2.Celcius Kelvin
+                        
+                        \n"""))
+                  
+                  if op == 1:
+                        temperatura = float(input("Inserte la Temperatura: "))
+                        print(f"El resultado de convertir {temperatura} Celcius a Fahrenheit es igual a {celcius_to_farenheit(temperatura)}")
+                        break
+      else:
+            print("Inserte una opción válida")
+            continue
+            
 
