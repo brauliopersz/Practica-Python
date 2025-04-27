@@ -1,7 +1,6 @@
 def kelvin_to_celsius(temperatura):
     
     """
-    _summary_:
     Función que recibe un parámetro (temperatura) y realiza la conversión de 
     Kelvin a Celsius de dicha temperatura
 
@@ -18,7 +17,6 @@ def kelvin_to_celsius(temperatura):
 def kelvin_to_fahrenheit(temperatura):
     
     """
-    _summary_:
     Función que recibe un parámetro (temperatura) y realiza la conversión de 
     Kelvin a Fahrenheit de dicha temperatura
 

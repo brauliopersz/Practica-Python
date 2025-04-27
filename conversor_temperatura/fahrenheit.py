@@ -1,7 +1,6 @@
 def fahrenheit_to_celsius(temperatura):
     
     """
-    _summary_:
     Función que recibe un parámetro (temperatura) y realiza la conversión de 
     Fahrenheit a Celcius de dicha temperatura
 
@@ -18,7 +17,6 @@ def fahrenheit_to_celsius(temperatura):
 def fahrenheit_to_kelvin(temperatura):
     
     """
-    _summary_:
     Función que recibe un parámetro (temperatura) y realiza la conversión de 
     Fahrenheit a Kelvin de dicha temperatura
 
