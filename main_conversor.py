@@ -2,7 +2,8 @@
 from conversor_temperatura.celsius import celcius_to_farenheit, celcius_to_kelvin
 from conversor_temperatura.fahrenheit import fahrenheit_to_celsius, fahrenheit_to_kelvin
 from conversor_temperatura.kelvin import kelvin_to_celsius, kelvin_to_fahrenheit
- 
+
+
 #Se declaran las variables a utilizar
 temperatura = 0
 op = 0
@@ -66,7 +67,7 @@ while True:
                         print("")
                         #Se imprime cadena de texto y se le pasa argumento a la función celcius_to_farenheit(temperatura)
                         print(f"El resultado de convertir {temperatura} Celcius °C a Fahrenheit es igual a {celcius_to_farenheit(temperatura)} °F")
-                        
+                  
                   elif op == 2:
                         print("Celcius Kelvin")
                         print("")
@@ -76,8 +77,7 @@ while True:
                         
                   
                   else:
-                        print("Inserte una opción válida")
-                        
+                        print("Inserte una opción válida!")
                   
             elif op == 2:
                   print("""
@@ -109,7 +109,7 @@ while True:
                         
                   
                   else:
-                        print("Inserte una opción válida")
+                        print("Inserte una opción válida!")
                         
             elif op == 3:
                   print("""
@@ -141,19 +141,19 @@ while True:
                         
                   
                   else:
-                        print("Inserte una opción válida")
+                        print("Inserte una opción válida!")
                   
                   
             
             else: 
-                  print("Inserte una opción válida")
+                  print("Inserte una opción válida!")
                   
       elif op == 3:
             break
             
                   
       else:
-            print("Inserte una opción válida")
+            print("Inserte una opción válida!")
             continue
             
 
